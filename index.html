@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Patagonia</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header__bar">
+            <h2 class="header__logo" >Head.</h2>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__li">Works</li>
+                    <li class="nav__li">Services</li>
+                    <li class="nav__li">Contact</li>
+                </ul>
+                <select class="nav__select">
+                    <option value="" disabled selected>...</option>
+                    <option value="">Works</option>
+                    <option value="">Services</option>
+                    <option value="">Contact</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <h1 class="main__heading">Patagonia</h1>
+            <p class="main__info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
+                Donec viverra eleifend lacus, vitae ullamcor.</p>
+            <div class="main__img">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="/images/horses-small.jpg">
+                    <source media="(max-width: 800px)" srcset="/images/horses-medium.jpg">
+                    <img src="/images/horses-large.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
